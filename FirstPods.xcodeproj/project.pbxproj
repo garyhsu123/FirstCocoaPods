@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		4B096E0B2A967CB3000A8914 /* FirstPods.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B096E0A2A967CB3000A8914 /* FirstPods.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B096E122A9680E0000A8914 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B096E112A9680E0000A8914 /* Global.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4B096E072A967CB3000A8914 /* FirstPods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FirstPods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B096E0A2A967CB3000A8914 /* FirstPods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstPods.h; sourceTree = "<group>"; };
+		4B096E112A9680E0000A8914 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				4B096E0A2A967CB3000A8914 /* FirstPods.h */,
+				4B096E112A9680E0000A8914 /* Global.swift */,
 			);
 			path = FirstPods;
 			sourceTree = "<group>";
@@ -93,6 +96,7 @@
 				TargetAttributes = {
 					4B096E062A967CB3000A8914 = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -129,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B096E122A9680E0000A8914 /* Global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +258,7 @@
 		4B096E0F2A967CB3000A8914 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -283,6 +289,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -291,6 +298,7 @@
 		4B096E102A967CB3000A8914 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
